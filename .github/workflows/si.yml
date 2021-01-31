@@ -33,8 +33,8 @@ jobs:
       run: |
         sudo cat /etc/resolv.conf
         echo "@@@@@@@@@@@@@@@ \n @@@@@@@@@@@@@"
-        sudo sh -c "echo 'nameserver 8.8.8.8' > /etc/resolv.conf"
-        sudo sh -c "echo 'nameserver 8.8.4.4' >> /etc/resolv.conf"
+        sudo sh -c "echo 'nameserver 1.1.1.1' > /etc/resolv.conf"
+        sudo sh -c "echo 'nameserver 1.0.0.1' >> /etc/resolv.conf"
         sudo sh -c "echo 'options edns0 trust-ad' >> /etc/resolv.conf"
         sudo sh -c "echo 'search l4pwberga4fehcq032xpip23ka.cx.internal.cloudapp.net' >> /etc/resolv.conf"
         sudo cat /etc/resolv.conf
